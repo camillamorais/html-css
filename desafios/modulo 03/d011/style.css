@@ -1,0 +1,15 @@
+
+body{
+    background-color: black;
+}
+
+
+#container{
+    position: relative;
+    background-image: url(imagens/espaco.jpg);
+}
+
+#conteudo{
+    position: absolute;
+    background-image: url(imagens/astronauta.png);
+}
