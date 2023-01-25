@@ -16,7 +16,7 @@
     font-size: 1em;
 }
 
-body {
+html, body {
     min-height: 100vh;
     background-color: rgb(218, 218, 218);
     font-family: var(--fonte1);
@@ -29,9 +29,10 @@ header {
 }
 
 header > h1 {
-    padding: 40px 40px 10px 40px;
+    padding-top: 50px;
+    font-variant: small-caps;
     font-family: var(--fonte2);
-    font-size: 5em;
+    font-size: 10vw;
 }
 
 header > p {
@@ -41,50 +42,71 @@ font-weight: normal;
 font-size: 1em;
 }
 
-header > p > a {
+a {
     color: white;
     text-decoration:none;
+    font-weight: bolder;
 }
 
-header > p > a:hover {
+a:hover {
     text-decoration:underline;
+    font-weight: bolder;
 }
 
 section {
     padding-bottom: 10vh;
     padding-top:  10vh;
-    padding-left: 10vh;
+    padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 2em;
+    font-size: 3vw;
     font-weight: bold;
-    line-height: 60px;
-
+    line-height: 2em;
 }
 
-#normal {
+
+section.normal {
     background-color: white;
     color: black;
 }
 
-#imagem1 {
-    position: relative;
-    height: 98vh;
-    padding: 19px;
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.357);
+    color: white;
+    box-shadow: inset 5px 5px 13px rgba(0, 0, 0, 0.723);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display:inline-block;    
+    background-color: rgba(0, 0, 0, 0.387);
+    color: white;
+    padding: 5px;
+    background-size: cover;
+
+}
+
+
+section#img1 {
+
     background-position: center center;
     background-image: url(imagens/background001.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
     background-attachment: fixed;
 }
 
-#imagem2 {
-    position: relative;
-    height: 98vh;
-    padding: 19px;
+section#img2 {
     background-position: center center;
     background-image: url(imagens/background002.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
     background-attachment: fixed;
+
 }
 
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
